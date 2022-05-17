@@ -4,6 +4,6 @@ import Lec3.models.MediaList;
 
 public interface ApiService {
 
-    void getMovies(int reqCode , ApiResult<MediaList, Exception> callback );
+    void getData(int reqCode , ApiResult<MediaList, Exception> callback );
 }
 

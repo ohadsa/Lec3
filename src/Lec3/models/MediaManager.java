@@ -13,8 +13,8 @@ public class MediaManager {
         this.service = ServiceHandler.getInstance();
     }
 
-    public void getMovies(int reqCode , ApiResult<MediaList, Exception> callback ){
-        service.getMovies(reqCode , callback );
+    public void getData(int reqCode , ApiResult<MediaList, Exception> callback ){
+        service.getData(reqCode , callback );
     }
 
 }

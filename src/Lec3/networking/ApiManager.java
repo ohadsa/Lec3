@@ -11,11 +11,11 @@ import java.io.IOException;
 public class ApiManager implements ApiService {
     private final OkHttpClient client = new OkHttpClient();
     private final Moshi moshi = new Moshi.Builder().build();
-    private final JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);
+    private  final JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);;
     private MediaList media;
 
     @Override
-    public void getMovies(int reqCode , ApiResult<MediaList, Exception> callback ) {
+    public void getData(int reqCode , ApiResult<MediaList, Exception> callback ) {
         Request request = new Request.Builder()
                 .url(Util.urls[reqCode])
                 .build();

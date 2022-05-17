@@ -10,7 +10,8 @@ public class Main {
         MediaManager mManager = new MediaManager(ServiceHandler.getInstance());
 
         // req for popular movies
-        mManager.getMovies(Util.MOVIES_POPULAR_CODE  , (data, exception) -> {
+        mManager.getData(Util.MOVIES_POPULAR_CODE , (data, exception) -> {
+
             if(data != null) {
                 for (Media m : data.getResults()) {
                     System.out.println(m.toString());

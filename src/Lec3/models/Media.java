@@ -5,20 +5,23 @@ public class Media {
     protected final String original_title;
     private final String title;
 
-    public Media(Integer id, String original_title, String title) {
+    private final String name;
+
+    public Media(Integer id, String original_title, String title, String name) {
         this.id = id;
         this.original_title = original_title;
         this.title = title;
+        this.name = name;
     }
+
 
     @Override
     public String toString() {
-        return "media{" +
+        return ( original_title==null ? "SERIES : " : "MOVIE" )  +
                 "\nid=" + id +
-                "\noriginalTitle='" + original_title + '\'' +
-                "\ntitle='" + title + '\'' +
+                "\n" + (original_title==null ? "name="+name : "originalTitle="+original_title ) + '\'' +
+                 (title==null ? "" : "\ntitle=" + title ) + '\'' +
                 '}' + "\n---------------------------------\n";
     }
-
 
 }
