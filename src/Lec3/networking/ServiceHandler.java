@@ -1,4 +1,4 @@
-package Lec3_continue.networking;
+package Lec3.networking;
 
 public class ServiceHandler {
 

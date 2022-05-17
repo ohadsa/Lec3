@@ -1,6 +1,6 @@
-package Lec3_continue.networking;
+package Lec3.networking;
 
-import Lec3_continue.models.MediaList;
+import Lec3.models.MediaList;
 
 public interface ApiService {
 

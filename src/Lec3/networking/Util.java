@@ -1,8 +1,8 @@
-package Lec3_continue.networking;
+package Lec3.networking;
 
 public class Util {
-    private static String KEY = "?api_key=96624ea86553cd7a4caed4ecbdc35ec1";
-    private static String BASE = "https://api.themoviedb.org/3/";
+    public static final String KEY = "?api_key=96624ea86553cd7a4caed4ecbdc35ec1";
+    public static final String BASE = "https://api.themoviedb.org/3/";
 
     public static String[] urls = {
             BASE + "movie/top_rated" + KEY ,

@@ -1,6 +1,6 @@
-package Lec3_continue.networking;
+package Lec3.networking;
 
-import Lec3_continue.models.MediaList;
+import Lec3.models.MediaList;
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
 import okhttp3.*;
@@ -11,7 +11,7 @@ import java.io.IOException;
 public class ApiManager implements ApiService {
     private final OkHttpClient client = new OkHttpClient();
     private final Moshi moshi = new Moshi.Builder().build();
-    private JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);
+    private final JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);
     private MediaList media;
 
     @Override

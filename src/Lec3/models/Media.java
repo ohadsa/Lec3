@@ -1,4 +1,4 @@
-package Lec3_continue.models;
+package Lec3.models;
 
 public class Media {
     protected final Integer id;
@@ -13,7 +13,7 @@ public class Media {
 
     @Override
     public String toString() {
-        return "Series{" +
+        return "media{" +
                 "\nid=" + id +
                 "\noriginalTitle='" + original_title + '\'' +
                 "\ntitle='" + title + '\'' +

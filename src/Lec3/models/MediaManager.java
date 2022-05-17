@@ -1,9 +1,8 @@
-package Lec3_continue.models;
+package Lec3.models;
 
-import Lec3_continue.models.MediaList;
-import Lec3_continue.networking.ApiResult;
-import Lec3_continue.networking.ApiService;
-import Lec3_continue.networking.ServiceHandler;
+import Lec3.networking.ApiResult;
+import Lec3.networking.ApiService;
+import Lec3.networking.ServiceHandler;
 
 public class MediaManager {
 
