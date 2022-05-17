@@ -11,7 +11,7 @@ import java.io.IOException;
 public class ApiManager implements ApiService {
     private final OkHttpClient client = new OkHttpClient();
     private final Moshi moshi = new Moshi.Builder().build();
-    private  final JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);;
+    private  final JsonAdapter<MediaList> gistJsonAdapter = moshi.adapter(MediaList.class);
     private MediaList media;
 
     @Override
